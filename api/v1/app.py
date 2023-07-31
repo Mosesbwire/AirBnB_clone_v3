@@ -7,7 +7,7 @@
 """
 
 from os import getenv
-from flask import Flask
+from flask import Flask, jsonify, make_response
 from api.v1.views import app_views
 from models import storage
 
@@ -21,6 +21,12 @@ app.url_map.strict_slashes = False
 def closeConnection(exception):
     """ terminates connection to storage """
     storage.close()
+
+
+@app.errorhandler(404)
+def not_found(error):
+    """ Handles all responses when route is not found """
+    return make_response(jsonify({'error': 'Not found'}), 404)
 
 
 if __name__ == "__main__":
