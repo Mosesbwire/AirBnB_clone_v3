@@ -29,6 +29,13 @@ def not_found(error):
     return make_response(jsonify({'error': 'Not found'}), 404)
 
 
+@app.errorhandler(400)
+def client_error(error):
+    """ Handles all 400 client errors """
+    
+    return error.description, 400
+
+
 if __name__ == "__main__":
     HOST = getenv('HBNB_API_HOST', '0.0.0.0')
     PORT = int(getenv('HBNB_API_PORT', 5000))
