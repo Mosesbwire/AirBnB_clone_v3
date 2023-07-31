@@ -69,3 +69,8 @@ def update_city(city_id):
             setattr(city, key, value)
     city.save()
     return jsonify(city.to_dict()), 200
+
+
+if __name__ == "__main__":
+    """ main function """
+    app.run(host="0.0.0.0", port=5000)
