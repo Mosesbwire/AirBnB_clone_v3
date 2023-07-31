@@ -70,9 +70,11 @@ class DBStorage:
 
     def delete(self, obj=None):
         """delete from the current database session obj if not None"""
+    
         if obj is not None:
             self.__session.delete(obj)
-    
+            self.__session.commit()
+
     def count(self, cls=None):
         """ returns the count of items in storage matching given cls """
         data = self.all(cls)
