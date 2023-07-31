@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    module api/v1/views/index.py
+    module api/v1/views/index.py:
     holds routes for app_views blueprint
 """
 

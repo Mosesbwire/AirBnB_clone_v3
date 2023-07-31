@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-    module api/v1/views/__init__.py
+    module api/v1/views/__init__.py:
     initializes the blueprint for the application
     register routes for app_views
 
