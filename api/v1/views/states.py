@@ -59,7 +59,7 @@ def create():
 
     if not 'name' in request.json:
         abort(400, "Missing name")
-    
+
     data = request.get_json()
 
     state = State(**data)
@@ -67,6 +67,7 @@ def create():
     state.save()
 
     return jsonify(state.to_dict()), 200
+
 
 @app_views.route('/states/<state_id>', methods=['PUT'], strict_slashes=False)
 def update_state(state_id):
