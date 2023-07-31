@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-    module api/v1/app.py
+    module api/v1/app.py:
     creates Flask app and register blueprint app_views
     the flask application entry point
 """
