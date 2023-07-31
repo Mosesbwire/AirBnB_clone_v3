@@ -23,7 +23,6 @@ def closeConnection(exception):
     storage.close()
 
 
-
 @app.errorhandler(404)
 def not_found(error):
     """ Handles all responses when route is not found """
