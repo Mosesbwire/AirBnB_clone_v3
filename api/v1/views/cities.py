@@ -2,8 +2,10 @@
 """ create a new view for City objects """
 
 
-from flask import flask, jsonify, abort, request
-from models import storage, State, City
+from flask import Flask, jsonify, abort, request
+from models import storage
+from models.state import State
+from models.city import City
 
 app = Flask(__name__)
 
