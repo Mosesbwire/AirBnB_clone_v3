@@ -1,9 +1,5 @@
 #!/usr/bin/python3
-
-"""module api/v1/app.py:
-creates Flask app and register blueprint app_views
-the flask application entry point
-"""
+""" entry point for the flask app """
 
 from os import getenv
 from flask import Flask, jsonify, make_response
