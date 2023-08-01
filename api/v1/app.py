@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""module api/v1/app.py:
-Entry point for the flask application
-"""
+""" Entry point for the flask application """
 
 from os import getenv
 from flask import Flask, jsonify, make_response
