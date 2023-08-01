@@ -38,7 +38,7 @@ class FileStorage:
         """ returns object with given id """
         obj_key = f'{cls.__name__}.{id}'
         return self.__objects.get(obj_key, None)
-        
+
     def new(self, obj):
         """sets in __objects the obj with key <obj class name>.id"""
         if obj is not None:
@@ -58,7 +58,6 @@ class FileStorage:
         if cls:
             return len([obj for obj in self.__objects.values() if isinstance(obj, cls)])
         return len(self.__objects)
-
 
     def reload(self):
         """deserializes the JSON file to __objects"""
