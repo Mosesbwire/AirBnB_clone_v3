@@ -1,10 +1,6 @@
 #!/usr/bin/python3
-"""
-
-Module app
+"""module api/v1/app.py:
 Entry point for the flask application
-Register blue print
-
 """
 
 from os import getenv
