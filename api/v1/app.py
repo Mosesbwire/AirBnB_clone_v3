@@ -1,8 +1,11 @@
 #!/usr/bin/python3
-'''
-    Entry point for the flask application
-    Register blue print
-'''
+"""
+
+Module app
+Entry point for the flask application
+Register blue print
+
+"""
 
 from os import getenv
 from flask import Flask, jsonify, make_response
